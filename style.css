@@ -8,7 +8,7 @@
 }
 
 .container {
-    max-width: 1336px;
+    max-width: 1178px;
     margin: 0 auto;
     padding: 0 16px;
 
@@ -268,7 +268,6 @@ li.activ {
     font-weight: 400;
 }
 
-.about__img img {}
 
 .about__img {
     position: relative;
@@ -360,7 +359,7 @@ li.activ {
 .numbers-list li {
     padding: 22px 33px;
     width: 220px;
-    
+
     border-radius: 6px;
     background: #232323;
     box-shadow: 5px 5px 4px 0px rgba(44, 44, 44, 0.30);
@@ -388,9 +387,7 @@ li.activ {
 
 .news-wrapper {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
     padding-top: 240px;
 }
 
@@ -408,4 +405,443 @@ li.activ {
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+.news__title {
+    display: flex;
+    align-items: center;
+    gap: 137px;
+}
+
+.news__title h2 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.news__title p {
+    color: #C1C1C1;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.news__list {
+    padding-top: 60px;
+}
+
+.news__list ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news__list ul li {
+    max-width: 362px;
+    background: rgba(241, 240, 240, 1);
+}
+
+.news__about {
+    padding: 20px;
+}
+
+.news__about h3 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #000;
+}
+
+.news__about p {
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+.news__about .date__and__count {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding-top: -20px;
+}
+
+.date__and__count .date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.date__and__count span {
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Nunito;
+}
+
+.date__and__count i {
+    width: 20px;
+    height: 20px;
+    color: rgba(153, 153, 153, 1);
+}
+
+.date__and__count .count {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.news__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__info button {
+    border: none;
+    border-radius: 8px;
+    background: #1C1B1E;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    margin: 20px auto 0px auto;
+}
+
+.all__news__btn {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.all__news__btn button {
+    padding: 15px 25px;
+    border-radius: 8px;
+    background: #B08E44;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* questions */
+
+.question__section {
+    position: relative;
+    background-image: url(./img/question-background-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.question__section::before {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #1C1B1E 10.15%, rgba(28, 27, 30, 0.42) 70.66%, #1C1B1E 85.71%);
+    ;
+}
+
+.question-wrapper {
+    position: relative;
+    padding-top: 200px;
+    max-width: 1092px;
+    margin: 0px auto;
+
+}
+
+.question-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 72px;
+    color: #B08E44;
+    top: 80px;
+    left: 48%;
+    text-align: center;
+    background: url(./img/vertical-line.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.question__title h2 {
+    text-align: center;
+    font-family: "Cantata One";
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 400;
+
+}
+
+.question__btn {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question__btn button {
+    border: none;
+    padding: 9px 27px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.question__btn button:nth-child(1) {
+    border-radius: 8px;
+    background: #B08E44;
+    position: absolute;
+    right: 90px;
+}
+
+.question__btn button:nth-child(2) {
+    border-radius: 0 8px 8px 0;
+}
+
+.question__list {
+    margin-top: 20px;
+
+}
+
+.question__list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 0.2px solid #FFF;
+    background: #1C1B1E;
+    margin-bottom: 20px;
+}
+
+.date___time p {
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.answers {
+    margin: 0px 40px 0px 23px;
+
+}
+
+.answers button {
+    padding: 4px 20px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #B08E44;
+}
+
+.question h3 {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 640px;
+}
+
+.question p {
+    color: #CDCDCD;
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 640px;
+}
+
+.star__cost {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.star__cost .star i {
+    color: yellow;
+    width: 16px;
+    height: 16px;
+}
+
+.star__cost .cost p {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #B08E44;
+    padding: 4px 12px;
+}
+
+.all__questions__btn {
+    border-radius: 8px;
+    background: #B08E44;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+    margin: 0px auto;
+}
+
+.all__questions__btn button {
+    color: #FFF;
+    font-family: Cantata One;
+    font-size: 24px;
+    background: none;
+    font-weight: 400;
+    padding: 9px 0px;
+    border: none;
+}
+
+/* service */
+
+.service__wrapper {
+    position: relative;
+    padding-top: 200px;
+    max-width: 1092px;
+    height: 1000px;
+    margin: 0px auto;
+
+}
+
+.service__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 72px;
+    color: #B08E44;
+    top: 80px;
+    left: 48%;
+    text-align: center;
+    background: url(./img/vertical-line.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service__title h2 {
+    color: #FFF;
+    font-family: Cantata One;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 3;
+}
+
+.service__title p {
+    text-align: center;
+    max-width: 700px;
+    margin: 30px auto 20px auto;
+    color: #C1C1C1;
+    font-size: 18px;
+    font-weight: 400;
+    z-index: 3;
+}
+
+.service__wrapper ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 125px;
+
+}
+
+.service__wrapper ul li p {
+    margin-top: 16px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.question-message {
+    position: relative;
+    z-index: 2;
+    fill: #FFF;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.50) inset, -5px -5px 20px 0px rgba(0, 0, 0, 0.50) inset;
+
+}
+
+.question-message::before {
+    position: absolute;
+    content: "";
+    width: 349px;
+    height: 503px;
+    border: 10px solid rgba(176, 142, 68, 0.70);
+    color: rgba(176, 142, 68, 0.7);
+    left: -143px;
+    top: -172px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.inbox {
+    position: relative;
+    z-index: 2;
+    fill: #FFF;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.50) inset, -5px -5px 20px 0px rgba(0, 0, 0, 0.50) inset;
+}
+
+.inbox::before {
+    position: absolute;
+    content: "";
+    width: 349px;
+    height: 503px;
+    border: 10px solid rgba(176, 142, 68, 0.70);
+    color: rgba(176, 142, 68, 0.7);
+    top: -43px;
+    left: -89px;
+    opacity: 0.3;
+}
+
+.subway_like {
+    position: relative;
+    z-index: 2;
+    fill: #FFF;
+    padding: 40px;
+    background-color: #FFF;
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.50) inset, -5px -5px 20px 0px rgba(0, 0, 0, 0.50) inset;
+}
+
+.subway_like::before {
+    position: absolute;
+    content: "";
+    width: 349px;
+    height: 503px;
+    border: 10px solid rgba(176, 142, 68, 0.70);
+    color: rgba(176, 142, 68, 0.7);
+    left: -35px;
+    top: -172px;
+    opacity: 0.3;
+}
+
+.service__wrapper ul li p {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.line__middle {
+    width: 836px;
+    height: 3px;
+    background: #FFF;
+    text-align: center;
+    margin: -130px auto;
 }
