@@ -1,0 +1,17 @@
+@media screen and (max-width:1000px) {
+    .navigation__wraper--list{
+        display: none !important;
+        width: 0 !important;
+    } 
+    .logo__navigation__wrapper{
+      display: flex !important;
+      justify-content: space-between !important; 
+      /* padding: 0 50px;  */
+    }
+    .search__language_img-nav{
+        width: 100% !important;
+    }
+    .navigation__wraper{
+        width: 20%;
+    }
+}

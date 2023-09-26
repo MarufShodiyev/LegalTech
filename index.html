@@ -9,40 +9,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="container header--wrapper">
-                <div class="logo__navigation__wrapper">
-                    <div class="logo__wrapper">
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-wrapper">
+                    <div class="logo">
                         <img src="./img/logo.svg" alt="logo img">
                         <h2>LegalTech</h2>
                     </div>
-                    <div class="navigation__wraper">
+                    <div class="navbar-lists">
                         <ul>
                             <li><a href="#">Yangiliklar</a></li>
                             <li><a href="#">Savollar</a></li>
                             <li><a href="#">Yuristlar</a></li>
                             <li><a href="#">Xizmatlar</a></li>
                             <li><a href="#">Yuristlar uchun</a></li>
-                            <li class="activ"><a href="#">Savol bering</a></li>
                         </ul>
-                        <div class="search__language_img-nav">
+                        <button class="question">
+                            Savol bering
+                        </button>
+                        <button class="search">
                             <i class="fa-sharp fa-solid fa-magnifying-glass search"></i>
-                            <select name="language" id="language">
+                        </button>
+                        <div class="lang">
+                            <select id="language">
                                 <option value="engliz">Engliz</option>
                                 <option value="Uzb">Uzbek</option>
                             </select>
-                            <img class="nav__img" src="./img/nav__image.svg" alt="nav img">
                         </div>
-
+                        <button class="profile">
+                            <img src="./img/nav__image.svg" alt="nav img">
+                        </button>
                     </div>
                 </div>
             </div>
-        </nav>
-        <main class="container main__wrapper">
+        </div>
+
+         <main class="container main__wrapper">
             <section class="section__wrapper">
                 <h1>
                     Ishonchli, Sifatli, Onlayn Yuridik xizmatlar
@@ -56,8 +63,7 @@
         </main>
     </header>
 
-
-
+    
     <main class="main-section">
         <section class="about">
             <div class="container">
@@ -397,7 +403,7 @@
                             <p>Javob bering</p>
 
                         </li>
-                        <li >
+                        <li>
                             <div class="subway_like">
                                 <img src="./img/subway_like.svg" alt="subway_like">
                             </div>
@@ -411,7 +417,305 @@
                 </div>
             </div>
         </section>
+        <section class="lawyers__section">
+            <div class="container">
+                <div class="lawyers__wrapper">
+                    <div class="lawyers__title">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                        <h2>Yuristlar</h2>
+                    </div>
+
+                    <ul class="lawyers__info">
+                        <li class="lawyers__about">
+                            <div class="lawyers__img">
+                                <img src="./img/lawyers1__img.svg" alt="lawyers1__img">
+                            </div>
+                            <h3>John Smith</h3>
+                            <span>Toshkent shahri</span>
+                            <h4>Kategoriya :<span> Korporativ yurist</span></h4>
+                            <p>Reyting:<span> 4.0</span> <i class="fa-regular fa-star"></i></p>
+                            <h3>Muvaffaqiyatli ishlar soni: <span> 16</span></h3>
+                        </li>
+                        <li class="lawyers__about">
+                            <div class="lawyers__img">
+                                <img src="./img/lawyers1__img.svg" alt="lawyers1__img">
+                            </div>
+                            <h3>John Smith</h3>
+                            <span>Toshkent shahri</span>
+                            <h4>Kategoriya :<span> Korporativ yurist</span></h4>
+                            <p>Reyting:<span> 4.0</span> <i class="fa-regular fa-star"></i></p>
+                            <h3>Muvaffaqiyatli ishlar soni: <span> 16</span></h3>
+                        </li>
+                        <li class="lawyers__about">
+                            <div class="lawyers__img">
+                                <img src="./img/lawyers1__img.svg" alt="lawyers1__img">
+                            </div>
+                            <h3>John Smith</h3>
+                            <span>Toshkent shahri</span>
+                            <h4>Kategoriya :<span> Korporativ yurist</span></h4>
+                            <p>Reyting:<span> 4.0</span> <i class="fa-regular fa-star"></i></p>
+                            <h3>Muvaffaqiyatli ishlar soni: <span> 16</span></h3>
+                        </li>
+                        <li class="lawyers__about">
+                            <div class="lawyers__img">
+                                <img src="./img/lawyers1__img.svg" alt="lawyers1__img">
+                            </div>
+                            <h3>John Smith</h3>
+                            <span>Toshkent shahri</span>
+                            <h4>Kategoriya :<span> Korporativ yurist</span></h4>
+                            <p>Reyting:<span> 4.0</span> <i class="fa-regular fa-star"></i></p>
+                            <h3>Muvaffaqiyatli ishlar soni: <span> 16</span></h3>
+                        </li>
+                        <li class="lawyers__about">
+                            <div class="lawyers__img">
+                                <img src="./img/lawyers1__img.svg" alt="lawyers1__img">
+                            </div>
+                            <h3>John Smith</h3>
+                            <span>Toshkent shahri</span>
+                            <h4>Kategoriya :<span> Korporativ yurist</span></h4>
+                            <p>Reyting:<span> 4.0</span> <i class="fa-regular fa-star"></i></p>
+                            <h3>Muvaffaqiyatli ishlar soni: <span> 16</span></h3>
+                        </li>
+                        <li class="lawyers__about">
+                            <div class="lawyers__img">
+                                <img src="./img/lawyers1__img.svg" alt="lawyers1__img">
+                            </div>
+                            <h3>John Smith</h3>
+                            <span>Toshkent shahri</span>
+                            <h4>Kategoriya :<span> Korporativ yurist</span></h4>
+                            <p>Reyting:<span> 4.0</span> <i class="fa-regular fa-star"></i></p>
+                            <h3>Muvaffaqiyatli ishlar soni: <span> 16</span></h3>
+                        </li>
+                        <li class="lawyers__about">
+                            <div class="lawyers__img">
+                                <img src="./img/lawyers1__img.svg" alt="lawyers1__img">
+                            </div>
+                            <h3>John Smith</h3>
+                            <span>Toshkent shahri</span>
+                            <h4>Kategoriya :<span> Korporativ yurist</span></h4>
+                            <p>Reyting:<span> 4.0</span> <i class="fa-regular fa-star"></i></p>
+                            <h3>Muvaffaqiyatli ishlar soni: <span> 16</span></h3>
+                        </li>
+                    </ul>
+                    <div class="scrol__btns">
+                        <button><i class="fa-solid fa-arrow-left"></i></button>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="service__type--section">
+            <div class="container">
+                <div class="service__type__wrapper">
+                    <div class="service__type__title">
+                        <h2>Bizning Xizmatlarimiz</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                    <ul>
+                        <li class="service__type">
+                            <img src="./img/service__type__img1.svg" alt="service__type__img">
+                            <p>Oilaviy munosabatlar </p>
+                        </li>
+                        <li class="service__type">
+                            <img src="./img/servicetype__mehnat-img.svg" alt="service__type__img">
+                            <p>Mehnat munosabatlari </p>
+                        </li>
+                        <li class="service__type">
+                            <img src="./img/service__type-jinoyat-img.svg" alt="service__type__img">
+                            <p>Jinoyat huquqi </p>
+                        </li>
+                        <li class="service__type">
+                            <img src="./img/service__type-tadbirkor__img.svg" alt="service__type__img">
+                            <p>Tadbirkorlik </p>
+                        </li>
+                        <li class="service__type">
+                            <img src="./img/service__type-fuqorolik__img.svg" alt="service__type__img">
+                            <p>Fuqarolik huquqi </p>
+                        </li>
+                        <li class="service__type">
+                            <img src="./img/service__type__migiratsiya__img.svg" alt="service__type__img">
+                            <p>Migratsiya</p>
+                        </li>
+                        <li class="service__type">
+                            <img src="./img/service__type-mol-mulk__img.svg" alt="service__type__img">
+                            <p>Mol-mulk huquqi </p>
+                        </li>
+                        <li class="service__type">
+                            <img src="./img/service__type-boshqa__img.svg" alt="service__type__img">
+                            <p>Boshqalar </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="other__services--section">
+            <div class="container">
+                <div class="other__services__wrapper">
+                    <div class="other__services--title">
+                        <h2>Boshqa xizmatlar</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="other__services__about">
+                        <div class="phone__consultation__icon">
+
+                            <div class="phone__consultation maxw">
+                                <h3>Telefon konsultatsiya</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <div class="cost__btn">
+                                    <p>50 ming so'm</p>
+                                    <button>Foydalanish</button>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/phone-call.svg" alt="phone-call">
+                            </div>
+                            <div class="tarozi">
+                                <img src="./img/tarozi.svg" alt="tarozi">
+                            </div>
+                        </div>
+                        <div class="phone__consultation__icon document__order">
+                            <div class="icon">
+                                <img src="./img/search-document.svg" alt="phone-call">
+                            </div>
+                            <div class="phone__consultation">
+                                <h3>Hujjat buyurtma qilish</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <div class="cost__btn">
+                                    <p>50 ming so'm</p>
+                                    <button>Foydalanish</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="answers-questions__section">
+            <div class="container">
+                <div class="answers-questions__wrapper">
+                    <div class="answers-questions__title">
+                        <h2>
+                            Savolingizniga qonun doirasida javob oling!
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="table">
+                        <form>
+                            <input type="email" id="email" placeholder="Email adresingiz">
+                            <input type="text" id="user" placeholder="Ismingiz">
+                            <input type="tel" id="tel" placeholder="Telefon raqamingiz">
+                            <input type="number" id="postcode" placeholder="Postcode">
+                            <input type="text" id="topic" placeholder="Topic">
+                        </form>
+                        <div class="question__info">
+                            <div class="user__img">
+                                <img src="./img/question__img.svg" alt="">
+                            </div>
+                            <div class="question">
+                                <h3>
+                                    Type a question in the box below for
+                                    a consultation with our specialist team.
+                                </h3>
+                                <p>
+                                    Average reponce time 60 mins
+                                    (during normal office hours)
+                                </p>
+                                <h2>
+                                    Or call us on +998 00 000 00 00
+                                </h2>
+                                <p>
+                                    Calls cost 500 sum per minuts plus your phone company
+                                    5 access charge
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <textarea rows="10" placeholder="Your Question">
+                            Your Question
+                        </textarea>
+                    </div>
+                    <div class="questions__btn">
+                        <button type="submit">Ask a lawyer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="logo__network">
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="logo">
+                        <h2>LegalTech</h2>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                    <ul class="networks">
+                        <li>
+                            <a href="#"><img src="./img/telegram__icon.svg" alt="telegram__icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/instagram__icon.svg" alt="instagram__icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/facebook__icon.svg" alt="facebook__icon"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/youtube__icon.svg" alt="youtube__icon"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="working__days">
+                    <h2>
+                        Office Opening Hours
+                    </h2>
+                    <ul>
+                        <li>Monday..............08.00AM-05.00PM
+                        </li>
+                        <li>Tuesday.............08.00AM-05.00PM
+                        </li>
+                        <li>Wednesday.....08.00AM-05.00PM
+                        </li>
+                        <li> Thursday............08.00AM-05.00PM
+                        </li>
+                        <li>Friday...................08.00AM-05.00PM
+                        </li>
+                        <li>Saturday............08.00AM-05.00PM
+                            </li>
+                        <li>Sunday................Closed</li>
+                    </ul>
+                </div>
+                <div class="adres">
+                    <h2>Address</h2>
+                    <p>Lorem ipsum dolor 
+                        sit amet, consectetur elit, 
+                    </p>
+                    <p>+998000000000</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
 </body>
 
 </html>
