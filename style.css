@@ -68,6 +68,17 @@ header::before {
     justify-content: space-between;
 }
 
+
+.navbar-lists .menu .menu__icon,.navbar-lists .menu .cansel__icon{
+    display: none;
+    
+}
+.navbar-lists .menu button{
+    border: none;
+    background: none;
+    font-size: 25px;
+    color: #fff;
+}
 .navbar-wrapper .navbar-lists {
     display: flex;
     align-items: center;
@@ -296,6 +307,47 @@ header .navbar-lists .profile img {
     top: -40px;
     z-index: 1;
 }
+.toogle--wrapper{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    width: 200px;
+    height: 50%;
+    background-color:#000;
+    top: 0;
+    flex-direction: column;
+}
+.toogle--wrapper ul{
+    display: flex;
+   flex-direction: column;
+   align-items: start   !important;
+   justify-content: start !important;
+   gap: 10px;
+   
+}
+
+
+
+.hidden{
+    display: none !important;
+    transition: 25s;
+}
+.toogle--wrapper ul li a{
+    cursor: pointer !important;
+   
+}
+.open{ 
+    display: flex !important;
+   transition: 5s;
+}
+#toogleClose{
+    cursor: pointer;
+}
+#toogle{
+    cursor: pointer;
+}
+
 
 /* .about__img::before {
     position: absolute;
@@ -2078,6 +2130,13 @@ footer {
     }
 
     @media screen and (max-width:820px){
+        .section__wrapper h1{
+            max-width: 600px;
+        }
+        .section__wrapper p{
+            max-width: 600px;
+        }
+
         .lawyers__wrapper .lawyers__info{
             grid-template-columns: repeat(2 ,auto);
             justify-content: center;
@@ -2086,6 +2145,16 @@ footer {
 
     }
     @media screen and (max-width:797px){
+        .navbar{
+            height: 70px;
+        }
+        .section__wrapper h1{
+            max-width: 500px;
+        }
+        .section__wrapper p{
+            max-width: 500px;
+        }
+
         .question h3{
             max-width: 350px;
         }
@@ -2111,8 +2180,185 @@ footer {
         }
     }
 
+    @media screen and (max-width:740px){
+        #navigations{
+            display: none;
+        }
+        .toogle--wrapper{
+            display: flex;
+        }
+        .toogle--wrapper ul li{
+            margin-left: 0px;
+            padding-left: 20px;
+            text-align: center;
+        }
+        .navbar-lists .menu .menu__icon{
+            
+            display:block;
+            
+        }
+        #toogle--wrapper ul li{
+            margin-left: 0px;
+        }
+
+        .about-wrapper {
+            flex-direction: column ;
+            align-items: center;
+            padding: 80px 0px 50px 0px;
+        }
+        .about__title h3{
+            max-width: 550px;
+            margin: 0px auto;
+        }
+        .about__title p{
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        .about-wrapper .about__title{
+            width: 100%;
+            text-align: center;
+            
+        }
+        .user{
+           justify-content: center;
+           padding-bottom: 50px;
+        }
+        .about__img img {
+            margin: 0px;
+        }
+
+        .about__img{
+           margin: 0px;
+
+        }
+
+        .news__title{
+            flex-direction: column;
+            gap: 20px;
+        }
+        .news__title h2{
+            text-align: center;
+        }
+        .news__title p{
+            text-align: center;
+        }
+        .news-wrapper::after{
+            left: 47%;
+        }
+        .lawyers__section{
+            padding: 80px 0px;
+        }
+        .lawyers__wrapper::after{
+            content: "";
+            left: 47%;
+            top: -100px;
+        }
+        .lawyers__title{
+            flex-direction: column-reverse;
+            gap: 10px; 
+        }
+        .lawyers__title p{
+            max-width: 600px;
+            text-align: center;
+        }
+        .lawyers__wrapper .lawyers__info{
+            justify-content: space-evenly;
+            margin-top: 30px;
+            /* grid-template-columns: repeat(); */
+        }
+        .lawyers__about{
+            max-height: 300px;
+        }
+
+        .service__type__wrapper{
+            padding: 120px 0px 80px 0px;
+        }
+        .service__type__wrapper::after{
+            top: 10px;
+        }
+
+        .other__services__wrapper{
+            padding-top: 0px;
+        }
+        .other__services--title{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .other__services--title h2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+        .other__services--title p{
+            max-width: 550px;
+        }
+        .other__services__about{
+            align-items: center;
+        }
+        .icon img{
+            display: none;
+        }
+        .answers-questions__wrapper{
+            padding: 120px 0px 50px 0px;
+        }
+        .answers-questions__title ::before{
+            left: 45%;
+            top: -120px;
+        }
+        .answers-questions__title{
+            margin: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .table{
+            flex-direction: column;
+            align-items: center;
+        }
+        .question__info{
+            flex-direction:row;
+            width: 100%;
+        }
+        form{
+            flex-direction:row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        form input{
+            max-width: 270px;
+        }
+    }
+    @media screen and (max-width:600px){
+        .section__wrapper h1{
+            max-width: 400px;
+            font-size: 35px;
+        }
+    }
+
     @media screen and (max-width:575px) {
         .news__list ul {
             grid-template-columns: repeat(1, auto);
         }
+         .section__wrapper p{
+            max-width: 400px;
+            padding: 30px 0px;
+            font-size: 13px;
+        }
+        /* .section__wrapper::after{
+            position: absolute ;
+            content: "";
+            width: 200px;
+            height: 400px;
+        }
+        .section__wrapper::before{
+            content: "";
+            left: 200px;
+        }  */
     }

@@ -22,7 +22,24 @@
                         <h2>LegalTech</h2>
                     </div>
                     <div class="navbar-lists">
-                        <ul>
+                        <div class="menu">
+                            <div class="menu__icon">
+                                <button id="toogle"><i class="fa-solid fa-bars"></i></button>
+                            </div>
+                            <div class="toogle--wrapper hidden" id="toogle--wrapper">
+                                <button id="toogleClose" ><i class="fa-solid fa-xmark"></i></button>
+                                <ul>
+                                <li><a href="#">Yangiliklar</a></li>
+                                <li><a href="#">Savollar</a></li>
+                                <li><a href="#">Yuristlar</a></li>
+                                <li><a href="#">Xizmatlar</a></li>
+                                <li><a href="#">Yuristlar uchun</a></li>
+                             </ul>
+
+                            </div>
+                            
+                        </div>
+                        <ul id="navigations">
                             <li><a href="#">Yangiliklar</a></li>
                             <li><a href="#">Savollar</a></li>
                             <li><a href="#">Yuristlar</a></li>
@@ -61,10 +78,12 @@
                 <button>ONLINE XIZMAT <i class="fa-solid fa-arrow-right-long"></i></button>
             </section>
         </main>
-    </header>
+    </header> 
 
     
-    <main class="main-section">
+
+     <main class="main-section">
+
         <section class="about">
             <div class="container">
                 <div class="about-wrapper">
@@ -85,16 +104,17 @@
                         <div class="user">
                             <img src="./img/Ellipse 7.svg" alt="user img">
                             <h4>Aziza Abdurakhmonova</h4>
-                        </div>
+                        </div> 
                     </div>
                     <div class="about__img">
                         <img src="./img/about__img.svg" alt="img main" class="about__img">
                     </div>
-
+                    
                 </div>
             </div>
         </section>
-        <section class="numbers">
+        <script src="./script.js"></script>
+         <section class="numbers">
             <div class="container">
                 <div class="numbers-wrapper">
                     <div class="numbers__title">
@@ -656,10 +676,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
     </main>
-    <footer>
+     <footer>
         <div class="container">
             <div class="footer__wrapper">
                 <div class="logo__network">
@@ -715,7 +735,8 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>    
 </body>
+
 
 </html>
