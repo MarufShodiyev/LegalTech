@@ -213,7 +213,7 @@ header .navbar-lists .profile img {
     color: #fff;
     font-size: 15px;
     font-weight: 600;
-    width: 660px;
+    max-width: 70%;
     letter-spacing: 1px;
     padding: 47px 0px 60px 0px;
 
@@ -1221,7 +1221,7 @@ header .navbar-lists .profile img {
 .phone__consultation {
     border-radius: 10px;
     background: #FFF;
-    width: 517px;
+    width: 100%;
     z-index: 2;
     padding: 14px 14px 14px 35px;
 
@@ -2133,7 +2133,7 @@ footer {
             max-width: 600px;
         }
         .section__wrapper p{
-            max-width: 600px;
+            max-width: 100%;
         }
 
         .lawyers__wrapper .lawyers__info{
@@ -2381,6 +2381,10 @@ footer {
     } 
 
     @media screen and (max-width:575px) {
+
+        .navbar-wrapper.question,.search ,.search{
+            display: none;
+        }
         .news__list ul {
             grid-template-columns: repeat(1, auto);
         }
@@ -2413,6 +2417,9 @@ footer {
         }
         .about__img::after{
             display: none;
+        }
+        .about__img img{
+            width: 100%;
         }
         .numbers-wrapper{
             padding-top: 100px;
@@ -2488,7 +2495,7 @@ footer {
             grid-template-columns:repeat(1,auto)
         }
         .phone__consultation{
-            max-width: 377px;
+            max-width: 100%;
         }
         .question__info{
             flex-direction: column;
