@@ -2472,7 +2472,7 @@ footer {
         }
 
         .service__wrapper{
-           height: 1020px;
+           height: 950px;
         }
         .service__wrapper ul{
             flex-direction: column;
@@ -2506,6 +2506,10 @@ footer {
         .questions__btn button{
             font-size: 16px;
             padding: 10px 20px;
+        }
+
+        .question-message,.inbox,.subway_like{
+            padding: 20px;
         }
         
     }
