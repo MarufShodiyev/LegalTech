@@ -607,7 +607,6 @@ header .navbar-lists .profile img {
 .question__section::before {
     position: absolute;
     content: "";
-
     top: 0;
     left: 0;
     width: 100%;
@@ -2264,7 +2263,7 @@ footer {
         .lawyers__wrapper .lawyers__info{
             justify-content: space-evenly;
             margin-top: 30px;
-            /* grid-template-columns: repeat(); */
+            
         }
         .lawyers__about{
             max-height: 300px;
@@ -2326,6 +2325,27 @@ footer {
             flex-direction:row;
             width: 100%;
         }
+        .date___time p{
+            font-size: 14px;
+        }
+        .answers button{
+            font-size: 11px;
+            padding: 2px 5px;
+        }
+        .question h3{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .star__cost .cost p{
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .star__cost .star i{
+            font-weight: 200;
+        }
+        .question-wrapper .question{
+            max-width: 200px;
+        }
         form{
             flex-direction:row;
             justify-content: space-around;
@@ -2334,31 +2354,151 @@ footer {
         form input{
             max-width: 270px;
         }
+
+        /* footer */
+
+        .footer__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo__network p{
+            margin-top: 15px;
+        }
+        .networks{
+            margin-top: 25px;
+        }
+        .working__days ul{
+            margin-top: 15px;
+            gap: 10px ;
+        }
     }
     @media screen and (max-width:600px){
         .section__wrapper h1{
             max-width: 400px;
             font-size: 35px;
         }
-    }
+    } 
 
     @media screen and (max-width:575px) {
         .news__list ul {
             grid-template-columns: repeat(1, auto);
         }
-         .section__wrapper p{
-            max-width: 400px;
-            padding: 30px 0px;
-            font-size: 13px;
-        }
-        /* .section__wrapper::after{
-            position: absolute ;
-            content: "";
-            width: 200px;
-            height: 400px;
+      
+        .section__wrapper::after{
+            display: none;
         }
         .section__wrapper::before{
-            content: "";
-            left: 200px;
-        }  */
+            display: none;
+        }
+        .section__wrapper{
+            margin: 25px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+            justify-content: center;
+            margin: 0 auto;
+
+        }
+         .section__wrapper p{
+            max-width: 350px;
+            padding: 30px 0px;
+            font-size: 13px;
+            text-align: center;
+        }
+        .section__wrapper h1{
+            width: 100%;
+            text-align: center;
+        }
+        .about__img::after{
+            display: none;
+        }
+        .numbers-wrapper{
+            padding-top: 100px;
+        }
+        .numbers-wrapper::after{
+            top: 0px;
+        }
+        .numbers-list{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            
+        }
+        .numbers-list li{
+            width: 150px;
+            margin-bottom: 15px;
+        }
+        .numbers-list li h3{
+            font-size: 30px;
+        }
+        .numbers-list li p{
+            font-size: 15px;
+        }
+
+        .question__list li{
+            flex-direction: column;
+        }
+        .question p{
+            max-width: 100%;
+        }
+        .question h3{
+            max-width: 100%;
+        }
+        .question-wrapper .question{
+            max-width: 100%;
+            text-align: center;
+        }
+        
+        .star__cost{
+            flex-direction: row;
+            align-items: end;
+            justify-content: flex-end;
+            text-align: end;
+        }
+        .date___time{
+            display: flex;
+        }
+        .date___time p{
+            font-size: 15px;
+            padding-left: 20px;
+        }
+
+        .service__wrapper{
+           height: 1020px;
+        }
+        .service__wrapper ul{
+            flex-direction: column;
+            gap: 30px;
+        }
+        .service__wrapper ul li{
+            
+            display: flex;
+            align-items: center;
+            
+        }
+        .service__wrapper ul li p{
+            padding-left: 20px;
+        }
+        .line__middle{
+            display: none;
+            
+        }
+        .lawyers__wrapper .lawyers__info{
+            grid-template-columns:repeat(1,auto)
+        }
+        .phone__consultation{
+            max-width: 377px;
+        }
+        .question__info{
+            flex-direction: column;
+        }
+        .question h2{
+            font-size: 15px;
+        }
+        .questions__btn button{
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+        
     }
